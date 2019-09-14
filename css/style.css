@@ -3,7 +3,7 @@
   margin: auto;
 }
 body {
-    background-color: #ffffff;
+  background-color: #ffffff;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -19,46 +19,46 @@ header {
   max-width: 250px;
 }
 nav > ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  nav > ul > li {
-    display: inline-block;
-  }
-  nav > ul > li > a {
-    padding: 0 15px;
-    font-weight: 700;
-    color: #4a4a4a;
-    width: 100%;
-  }
-  nav > ul > li > a:visited {
-    color: #fd4644;
-  }
-  a {
-    color: #d70015;
-    text-decoration: none;
-  }
-  a:visited {
-    color: #fd4644;
-  }
-  a:hover {
-    color: #333333;
-  }
-  a:active {
-    color: #1e474e;
-  }
-  #hero span {
-    display: block;
-  }
-  img {
-    width: 100%;
-  }
-  p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  font-weight: 700;
+  color: #4a4a4a;
+  width: 100%;
+}
+nav > ul > li > a:visited {
+  color: #fd4644;
+}
+a {
+  color: #d70015;
+  text-decoration: none;
+}
+a:visited {
+  color: #fd4644;
+}
+a:hover {
+  color: #333333;
+}
+a:active {
+  color: #1e474e;
+}
+#hero span {
+  display: block;
+}
+img {
+  width: 100%;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .button {
   display: inline-block;
@@ -96,12 +96,10 @@ footer {
   text-align: center;
 }
 
-
 /*
 Home Page- index.html
 */
 #hero {
-
   color: #333;
   width: 100%;
   text-align: center;
@@ -112,22 +110,19 @@ Home Page- index.html
 }
 
 #work h2 {
-
   text-align: center;
 }
 
 #work h3 {
   margin-top: 0;
 }
-   
-  
- 
+
 /*
 About Me - about.html
 */
 #me {
   margin-left: 10%;
-  margin-right:10%;
+  margin-right: 10%;
 }
 
 .button-wrapper {
@@ -136,37 +131,48 @@ About Me - about.html
 /*
   CSS ANIMATION
   */
-  
- 
-  @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
   }
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  to {
+    fill: #f76414;
   }
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  to {
+    transform: translate(200px, 50px);
   }
-  @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
   }
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  to {
+    transform: translate(100px, 48px);
   }
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -174,45 +180,43 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   body {
     font-size: 18px;
-  }  
+  }
   header {
-        text-align: unset;
-      }
-    
-      nav {
-        width: auto;
-        float: right;
-        margin: 1em;
-      }
-    
-      .navtoggle li:not(:last-child) {
-        display: inline-block;
-      }
-    
-      .navtoggle li:last-child {
-        display: none;
-      }
-      
-      .col-md-6 {
-        width: 50%;
-      }
-      [class*="col-"] {
-        float: left;
-        padding: 10px;
-      }
-     .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-      .container {
-        padding: 0 15px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      
-      
-} 
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin: 1em;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .col-lg-8 {
     width: 66.66%;
@@ -255,11 +259,14 @@ Medium devices (640px and larger)
   /*
   CSS ANIMATION
   */
-  
- 
+
   @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
+    from {
+      fill: #edc655;
+    }
+    to {
+      fill: #f76414;
+    }
   }
   .sun {
     animation-duration: 4s;
@@ -269,8 +276,12 @@ Medium devices (640px and larger)
     animation-timing-function: linear;
   }
   @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
   }
   .cloud-front {
     animation-duration: 30s;
@@ -280,9 +291,14 @@ Medium devices (640px and larger)
     animation-timing-function: linear;
   }
   @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
   }
   .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
+}
